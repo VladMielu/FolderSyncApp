@@ -1,5 +1,5 @@
 # FolderSyncApp
-This C# console application, named FolderSync, performs file and folder synchronization from a source directory to a destination directory at specified intervals. Key functionality and components include:
+This C# console application, named FolderSync, performs file and folder synchronization from a source directory to a destination directory at specified time intervals. Key functionality and components include:
 
 Command-line arguments are used to specify the source folder, destination folder, and synchronization interval in seconds.
 
