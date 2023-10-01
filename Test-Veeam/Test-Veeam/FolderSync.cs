@@ -38,7 +38,7 @@ class FolderSync
         {
             Console.WriteLine($"Synchronization started. Sync interval: {syncIntervalSeconds} seconds");
 
-            Timer syncTimer = new Timer(state => SyncFoldersAsync(sourceFolder, destinationFolder, logWriter).Wait(), null, 0, syncIntervalSeconds * 1000);
+            Timer syncTimer = new Timer(state => SyncFoldersAsync(sourceFolder, destinationFolder, logWriter, true).Wait(), null, 1, syncIntervalSeconds * 1000);
 
             Console.WriteLine("Press Enter to exit.");
             Console.ReadLine();
@@ -47,12 +47,15 @@ class FolderSync
         Console.WriteLine("Synchronization complete. Log written to 'synclog.txt'.");
     }
 
-    static async Task SyncFoldersAsync(string sourceFolder, string destinationFolder, StreamWriter logWriter)
+    static async Task SyncFoldersAsync(string sourceFolder, string destinationFolder, StreamWriter logWriter, bool mainSync)
     {
         string syncMessage = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Synchronization started...";
-        Console.WriteLine(syncMessage);
-        logWriter.WriteLine(syncMessage);
-
+        if (mainSync) 
+        {
+            Console.WriteLine(syncMessage);
+            logWriter.WriteLine(syncMessage);
+        }
+        
         foreach (string sourceFilePath in Directory.GetFiles(sourceFolder))
         {
             string fileName = Path.GetFileName(sourceFilePath);
@@ -105,11 +108,14 @@ class FolderSync
                 Directory.CreateDirectory(destinationSubdirectory);
             }
 
-            await SyncFoldersAsync(subdirectory, destinationSubdirectory, logWriter);
+            await SyncFoldersAsync(subdirectory, destinationSubdirectory, logWriter, false);
         }
         syncMessage = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Synchronization completed.";
-        Console.WriteLine(syncMessage);
-        logWriter.WriteLine(syncMessage);
+        if (mainSync)
+        {
+            Console.WriteLine(syncMessage);
+            logWriter.WriteLine(syncMessage);
+        }
     }
 
     static async Task CopyFileAsync(string sourcePath, string destinationPath)
