@@ -1,0 +1,15 @@
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\bin\Debug\net6.0\Test-Veeam.exe
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\bin\Debug\net6.0\Test-Veeam.deps.json
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\bin\Debug\net6.0\Test-Veeam.runtimeconfig.json
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\bin\Debug\net6.0\Test-Veeam.dll
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\bin\Debug\net6.0\Test-Veeam.pdb
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\Test-Veeam.csproj.AssemblyReference.cache
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\Test-Veeam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\Test-Veeam.AssemblyInfoInputs.cache
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\Test-Veeam.AssemblyInfo.cs
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\Test-Veeam.csproj.CoreCompileInputs.cache
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\Test-Veeam.dll
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\refint\Test-Veeam.dll
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\Test-Veeam.pdb
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\Test-Veeam.genruntimeconfig.cache
+C:\Users\vladu\source\repos\Test-Veeam\Test-Veeam\obj\Debug\net6.0\ref\Test-Veeam.dll
