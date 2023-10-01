@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Threading.Tasks;
 
 class FolderSync
 {
@@ -70,7 +69,6 @@ class FolderSync
             }
             else
             {
-                // Compare file contents and update if they are different
                 if (!AreFilesEqual(sourceFilePath, destinationFilePath))
                 {
                     string logMessage = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Updating '{fileName}'...";
@@ -109,6 +107,20 @@ class FolderSync
             }
 
             await SyncFoldersAsync(subdirectory, destinationSubdirectory, logWriter, false);
+        }
+
+        foreach (string subdirectory in Directory.GetDirectories(destinationFolder))
+        {
+            string subdirectoryName = Path.GetFileName(subdirectory);
+            string sourceSubdirectory = Path.Combine(sourceFolder, subdirectoryName);
+
+            if (!Directory.Exists(sourceSubdirectory))
+            {
+                string logMessage = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Deleting subdirectory '{subdirectoryName}' from the destination folder...";
+                Console.WriteLine(logMessage);
+                logWriter.WriteLine(logMessage);
+                Directory.Delete(subdirectory, true);
+            }
         }
 
         syncMessage = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Synchronization completed.";
