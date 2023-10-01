@@ -110,6 +110,7 @@ class FolderSync
 
             await SyncFoldersAsync(subdirectory, destinationSubdirectory, logWriter, false);
         }
+
         syncMessage = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Synchronization completed.";
         if (mainSync)
         {

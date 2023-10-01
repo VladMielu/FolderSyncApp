@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vladu\\source\\repos\\Test-Veeam\\Test-Veeam\\Test-Veeam.csproj",
+      "projectUniqueName": "C:\\Users\\vladu\\Source\\Repos\\FolderSyncApp\\Test-Veeam\\Test-Veeam\\Test-Veeam.csproj",
       "projectName": "Test-Veeam",
-      "projectPath": "C:\\Users\\vladu\\source\\repos\\Test-Veeam\\Test-Veeam\\Test-Veeam.csproj",
+      "projectPath": "C:\\Users\\vladu\\Source\\Repos\\FolderSyncApp\\Test-Veeam\\Test-Veeam\\Test-Veeam.csproj",
       "packagesPath": "C:\\Users\\vladu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vladu\\source\\repos\\Test-Veeam\\Test-Veeam\\obj\\",
+      "outputPath": "C:\\Users\\vladu\\Source\\Repos\\FolderSyncApp\\Test-Veeam\\Test-Veeam\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vladu\\AppData\\Roaming\\NuGet\\NuGet.Config",
