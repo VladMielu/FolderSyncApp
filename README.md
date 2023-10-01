@@ -9,7 +9,7 @@ Logs synchronization activities to a file named "synclog.txt".
 
 Periodically triggers the SyncFoldersAsync method using a timer.
 
-Copies new or updated files from source to destination, deletes files not in the source, and creates missing subdirectories.
+Copies new or updated files from source to destination, deletes files not in the source.
 
 Provides a basic file comparison function to check if two files have the same content.
 
