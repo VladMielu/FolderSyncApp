@@ -46,10 +46,10 @@ class FolderSync
         Console.WriteLine("Synchronization complete. Log written to 'synclog.txt'.");
     }
 
-    static async Task SyncFoldersAsync(string sourceFolder, string destinationFolder, StreamWriter logWriter, bool mainSync)
+    static async Task SyncFoldersAsync(string sourceFolder, string destinationFolder, StreamWriter logWriter, bool mainDirectorySync)
     {
         string syncMessage = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Synchronization started...";
-        if (mainSync) 
+        if (mainDirectorySync) 
         {
             Console.WriteLine(syncMessage);
             logWriter.WriteLine(syncMessage);
@@ -124,7 +124,7 @@ class FolderSync
         }
 
         syncMessage = $"{DateTime.Now:dd-MM-yyyy HH:mm:ss} - Synchronization completed.";
-        if (mainSync)
+        if (mainDirectorySync)
         {
             Console.WriteLine(syncMessage);
             logWriter.WriteLine(syncMessage);
