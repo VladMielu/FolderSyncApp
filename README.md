@@ -7,7 +7,7 @@ Command-line arguments are used to specify the source folder, destination folder
 dotnet build
 dotnet run -- "source folder path" "destination folder path" interval
 ```
-(make sure you run this while being the folder with the .csproj file)
+(make sure you run this while being in the folder with the .csproj file)
 
 It verifies argument count, folder existence, and interval validity.
 
